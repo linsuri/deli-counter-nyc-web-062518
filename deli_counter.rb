@@ -13,4 +13,7 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, new_person)
-  puts ""
+  katz_deli.each_with_index {|name, index| puts "Welcome, #{new_person}. You are number #{index+1} in line."}
+end
+
+def 
