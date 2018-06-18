@@ -13,8 +13,8 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, new_person)
+  katz_deli.push(new_person)
   katz_deli.each_with_index {|name, index| puts "Welcome, #{new_person}. You are number #{index+1} in line."}
-  new_person
 end
 
 def now_serving(katz_deli)
